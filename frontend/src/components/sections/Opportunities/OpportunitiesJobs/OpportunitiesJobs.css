@@ -1,0 +1,251 @@
+.opportunities-jobs {
+  padding: 130px 24px;
+
+  background: #181818;
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+.opportunities-jobs__container {
+  width: min(100%, var(--container-width));
+
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.opportunities-jobs__header {
+  max-width: 760px;
+
+  margin-bottom: 80px;
+}
+
+.opportunities-jobs__eyebrow {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+
+  color: #a20202;
+}
+
+.opportunities-jobs__header h2 {
+  margin-bottom: 24px;
+
+  font-size: clamp(44px, 6vw, 72px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+.opportunities-jobs__header p {
+  max-width: 620px;
+
+  font-size: 16px;
+  line-height: 1.75;
+
+  color: #b8b8b8;
+}
+
+/* =========================
+   LIST
+========================= */
+
+.opportunities-jobs__list {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* =========================
+   ITEM
+========================= */
+
+.opportunity-job {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr) 40px;
+
+  align-items: center;
+
+  gap: 45px;
+
+  padding: 38px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+
+  transition:
+    padding 250ms ease,
+    background-color 250ms ease;
+}
+
+.opportunity-job:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background: rgba(255, 255, 255, 0.035);
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.opportunity-job__logo {
+  width: 150px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 12px;
+
+  background: #ffffff;
+}
+
+.opportunity-job__logo img {
+  width: 100%;
+  max-height: 55px;
+
+  object-fit: contain;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.opportunity-job__category {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #a20202;
+}
+
+.opportunity-job__content h3 {
+  margin-bottom: 10px;
+
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+.opportunity-job__content p {
+  max-width: 650px;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: #b8b8b8;
+}
+
+/* =========================
+   ARROW
+========================= */
+
+.opportunity-job__arrow {
+  align-self: center;
+
+  font-size: 25px;
+  line-height: 1;
+
+  color: #a20202;
+
+  transition: transform 200ms ease;
+}
+
+.opportunity-job:hover .opportunity-job__arrow {
+  transform: translate(5px, -5px);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+  .opportunities-jobs {
+    padding: 100px 20px;
+  }
+
+  .opportunities-jobs__header {
+    margin-bottom: 60px;
+  }
+
+  .opportunity-job {
+    grid-template-columns: 130px minmax(0, 1fr) 30px;
+
+    gap: 28px;
+
+    padding: 32px 0;
+  }
+
+  .opportunity-job__logo {
+    width: 120px;
+    height: 70px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .opportunities-jobs {
+    padding: 80px 20px;
+  }
+
+  .opportunities-jobs__header {
+    margin-bottom: 50px;
+  }
+
+  .opportunities-jobs__header h2 {
+    font-size: 42px;
+  }
+
+  .opportunities-jobs__header p {
+    font-size: 14px;
+  }
+
+  .opportunity-job {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding: 30px 0;
+  }
+
+  .opportunity-job:hover {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .opportunity-job__logo {
+    width: 140px;
+    height: 65px;
+  }
+
+  .opportunity-job__content h3 {
+    font-size: 21px;
+  }
+
+  .opportunity-job__content p {
+    font-size: 13px;
+  }
+
+  .opportunity-job__arrow {
+    display: none;
+  }
+}

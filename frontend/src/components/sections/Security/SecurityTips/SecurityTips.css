@@ -1,0 +1,166 @@
+.security-tips {
+  padding: 120px 24px;
+
+  background: #a20202;
+  color: #ffffff;
+}
+
+.security-tips__container {
+  width: min(100%, var(--container-width));
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.security-tips__header {
+  max-width: 720px;
+  margin-bottom: 80px;
+}
+
+.security-tips__eyebrow {
+  display: block;
+
+  margin-bottom: 22px;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.security-tips__header h2 {
+  margin-bottom: 22px;
+
+  font-size: clamp(42px, 5.5vw, 68px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+.security-tips__header p {
+  max-width: 600px;
+
+  font-size: 16px;
+  line-height: 1.75;
+
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* =========================
+   TIPS
+========================= */
+
+.security-tips__list {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.security-tip {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+
+  gap: 40px;
+
+  padding: 34px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.security-tip__number {
+  padding-top: 4px;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.security-tip__content {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 60px;
+}
+
+.security-tip__content h3 {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+.security-tip__content p {
+  max-width: 560px;
+
+  font-size: 14px;
+  line-height: 1.75;
+
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+  .security-tips {
+    padding: 100px 20px;
+  }
+
+  .security-tips__header {
+    margin-bottom: 60px;
+  }
+
+  .security-tip {
+    grid-template-columns: 50px 1fr;
+    gap: 24px;
+  }
+
+  .security-tip__content {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 550px) {
+  .security-tips {
+    padding: 80px 20px;
+  }
+
+  .security-tips__header {
+    margin-bottom: 50px;
+  }
+
+  .security-tips__header h2 {
+    font-size: 42px;
+  }
+
+  .security-tips__header p {
+    font-size: 14px;
+  }
+
+  .security-tip {
+    grid-template-columns: 36px 1fr;
+    gap: 16px;
+
+    padding: 28px 0;
+  }
+
+  .security-tip__content h3 {
+    font-size: 20px;
+  }
+
+  .security-tip__content p {
+    font-size: 13px;
+  }
+}

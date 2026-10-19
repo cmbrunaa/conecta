@@ -1,0 +1,8 @@
+.security-page {
+  min-height: 100vh;
+  background: var(--color-background);
+}
+
+.security-page main {
+  overflow: hidden;
+}

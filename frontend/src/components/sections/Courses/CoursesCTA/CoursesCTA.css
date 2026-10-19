@@ -1,0 +1,161 @@
+.courses-cta {
+  padding: 120px 24px;
+
+  background: #181818;
+  overflow: hidden;
+}
+
+.courses-cta__container {
+  max-width: var(--container-width);
+  min-height: 430px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 80px;
+}
+
+.courses-cta__content {
+  max-width: 720px;
+}
+
+.courses-cta__eyebrow {
+  display: block;
+  margin-bottom: 24px;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+
+  color: #a20202;
+}
+
+.courses-cta h2 {
+  margin-bottom: 28px;
+
+  font-size: clamp(46px, 6vw, 76px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+.courses-cta__content > p {
+  max-width: 600px;
+  margin-bottom: 35px;
+
+  font-size: 16px;
+  line-height: 1.75;
+
+  color: #b8b8b8;
+}
+
+.courses-cta__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 15px 20px;
+
+  background: #ffffff;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  color: #181818;
+
+  transition:
+    gap 200ms ease,
+    transform 200ms ease,
+    background-color 200ms ease;
+}
+
+.courses-cta__button span {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.courses-cta__button:hover {
+  gap: 22px;
+
+  transform: translateY(-2px);
+
+  background: #f1f1f1;
+}
+
+/* =========================
+   MARK
+========================= */
+
+.courses-cta__mark {
+  width: 230px;
+  height: 230px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid rgba(255, 255, 255, 0.35);
+
+  transform: rotate(-4deg);
+
+  color: #ffffff;
+
+  transition:
+    transform 300ms ease,
+    border-color 300ms ease;
+}
+
+.courses-cta__mark:hover {
+  transform: rotate(0deg);
+
+  border-color: #a20202;
+}
+
+.courses-cta__mark span,
+.courses-cta__mark strong {
+  display: block;
+
+  font-size: 42px;
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  font-weight: 800;
+}
+
+.courses-cta__mark strong {
+  margin-left: 28px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+  .courses-cta {
+    padding: 90px 20px;
+  }
+
+  .courses-cta__container {
+    min-height: auto;
+
+    display: block;
+  }
+
+  .courses-cta__mark {
+    width: 150px;
+    height: 150px;
+
+    margin-top: 60px;
+  }
+
+  .courses-cta__mark span,
+  .courses-cta__mark strong {
+    font-size: 28px;
+  }
+}

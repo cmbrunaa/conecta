@@ -1,0 +1,203 @@
+.guide-content {
+  padding: 130px 24px;
+
+  background-color: var(--color-background);
+
+  background-image:
+    linear-gradient(rgba(24, 37, 54, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(24, 37, 54, 0.03) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+.guide-content__container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.guide-content__header {
+  max-width: 760px;
+  margin-bottom: 75px;
+}
+
+.guide-content__eyebrow {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+
+  color: var(--color-primary);
+}
+
+.guide-content__header h2 {
+  font-size: clamp(44px, 6vw, 72px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+
+  color: var(--color-text);
+}
+
+/* =========================
+   LIST
+========================= */
+
+.guide-content__list {
+  max-width: 1000px;
+  margin-left: auto;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.guide-content__item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+
+  gap: 35px;
+
+  padding: 45px 0;
+
+  border-bottom: 1px solid var(--color-border);
+
+  transition: padding 200ms ease;
+}
+
+.guide-content__item:hover {
+  padding-left: 12px;
+}
+
+/* =========================
+   NUMBER
+========================= */
+
+.guide-content__number {
+  padding-top: 3px;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+
+  color: var(--color-primary);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.guide-content__main h3 {
+  margin-bottom: 15px;
+
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+
+  color: var(--color-text);
+}
+
+.guide-content__main > p {
+  max-width: 720px;
+
+  margin-bottom: 25px;
+
+  font-size: 15px;
+  line-height: 1.75;
+
+  color: var(--color-text-secondary);
+}
+
+/* =========================
+   TOPICS
+========================= */
+
+.guide-content__main ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 10px 30px;
+
+  list-style: none;
+}
+
+.guide-content__main li {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 9px;
+
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 700;
+
+  color: var(--color-text);
+}
+
+.guide-content__main li span {
+  flex-shrink: 0;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  color: var(--color-primary);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+  .guide-content {
+    padding: 90px 20px;
+  }
+
+  .guide-content__header {
+    margin-bottom: 55px;
+  }
+
+  .guide-content__item {
+    grid-template-columns: 50px 1fr;
+
+    gap: 20px;
+
+    padding: 35px 0;
+  }
+
+  .guide-content__main h3 {
+    font-size: 23px;
+  }
+
+  .guide-content__main ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+  .guide-content {
+    padding: 80px 20px;
+  }
+
+  .guide-content__item {
+    grid-template-columns: 35px 1fr;
+
+    gap: 15px;
+  }
+
+  .guide-content__main > p {
+    font-size: 13px;
+  }
+
+  .guide-content__main li {
+    font-size: 11px;
+  }
+}

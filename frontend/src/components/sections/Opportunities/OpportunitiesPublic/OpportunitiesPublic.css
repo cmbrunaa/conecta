@@ -1,0 +1,162 @@
+.opportunities-public {
+  padding: 130px 24px;
+
+  background: var(--color-primary);
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+.opportunities-public__container {
+  width: min(100%, var(--container-width));
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.opportunities-public__content {
+  max-width: 800px;
+}
+
+.opportunities-public__eyebrow {
+  display: block;
+
+  margin-bottom: 22px;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+
+  color: #ffffff;
+}
+
+.opportunities-public h2 {
+  max-width: 780px;
+
+  margin-bottom: 28px;
+
+  font-size: clamp(44px, 6vw, 74px);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+.opportunities-public__content > p {
+  max-width: 620px;
+
+  font-size: 16px;
+  line-height: 1.75;
+
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* =========================
+   HIGHLIGHT
+========================= */
+
+.opportunities-public__highlight {
+  padding: 34px 0 34px 30px;
+
+  border-left: 2px solid rgba(255, 255, 255, 0.65);
+}
+
+.opportunities-public__highlight > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+
+  color: #ffffff;
+}
+
+.opportunities-public__highlight strong {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+.opportunities-public__highlight p {
+  max-width: 320px;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+  .opportunities-public {
+    padding: 100px 20px;
+  }
+
+  .opportunities-public__container {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+  .opportunities-public__highlight {
+    max-width: 550px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 550px) {
+  .opportunities-public {
+    padding: 80px 20px;
+  }
+
+  .opportunities-public__container {
+    gap: 45px;
+  }
+
+  .opportunities-public h2 {
+    font-size: 42px;
+  }
+
+  .opportunities-public__content > p {
+    font-size: 14px;
+  }
+
+  .opportunities-public__highlight {
+    padding-left: 20px;
+  }
+
+  .opportunities-public__highlight strong {
+    font-size: 24px;
+  }
+
+  .opportunities-public__highlight p {
+    font-size: 13px;
+  }
+}

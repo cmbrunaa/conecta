@@ -1,0 +1,63 @@
+.resume-page {
+  min-height: 100vh;
+
+  background-color: var(--color-background);
+  color: var(--color-text);
+
+  background-image:
+    linear-gradient(
+      rgba(24, 37, 54, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(24, 37, 54, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 40px 40px;
+}
+
+.resume-page__main {
+  padding: 72px 0 96px;
+}
+
+.resume-page__container {
+  width: min(100% - 48px, var(--container-width));
+
+  margin: 0 auto;
+}
+
+.resume-page__workspace {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(360px, 0.9fr);
+
+  align-items: start;
+
+  gap: 32px;
+
+  margin-top: 48px;
+}
+
+@media (max-width: 900px) {
+  .resume-page__workspace {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-page__main {
+    padding: 52px 0 64px;
+  }
+
+  .resume-page__container {
+    width: min(100% - 32px, var(--container-width));
+  }
+
+  .resume-page__workspace {
+    margin-top: 36px;
+  }
+}

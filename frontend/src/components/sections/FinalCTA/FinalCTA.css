@@ -1,0 +1,148 @@
+.final-cta {
+  padding: var(--spacing-4xl) 0;
+
+  background-color: #181818;
+}
+
+.final-cta__container {
+  width: min(100% - 48px, var(--container-width));
+
+  min-height: 360px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  align-items: center;
+
+  gap: 64px;
+
+  padding: 64px 0;
+
+  border-top: 1px solid #383838;
+  border-bottom: 1px solid #383838;
+}
+
+.final-cta__content {
+  max-width: 720px;
+}
+
+.final-cta__eyebrow {
+  display: inline-block;
+
+  margin-bottom: var(--spacing-lg);
+
+  color: #f1b5b5;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.final-cta__title {
+  margin: 0;
+
+  color: var(--color-white);
+
+  font-size: clamp(44px, 6vw, 72px);
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -3px;
+}
+
+.final-cta__title span {
+  color: var(--color-primary);
+}
+
+.final-cta__description {
+  max-width: 560px;
+
+  margin: var(--spacing-xl) 0 0;
+
+  color: #b8b8b8;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.final-cta__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-height: 54px;
+
+  padding: 0 24px;
+
+  background-color: var(--color-primary);
+  color: var(--color-white);
+
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    transform var(--transition-fast),
+    background-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.final-cta__button span {
+  font-size: 19px;
+
+  transition: transform var(--transition-fast);
+}
+
+.final-cta__button:hover {
+  background-color: var(--color-primary-dark);
+
+  transform: translateY(-2px);
+
+  box-shadow: var(--shadow-md);
+}
+
+.final-cta__button:hover span {
+  transform: translateX(4px);
+}
+
+@media (max-width: 800px) {
+  .final-cta__container {
+    grid-template-columns: 1fr;
+
+    gap: 32px;
+
+    padding: 56px 0;
+  }
+
+  .final-cta__button {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .final-cta {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .final-cta__container {
+    width: min(100% - 32px, var(--container-width));
+  }
+
+  .final-cta__title {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .final-cta__description {
+    font-size: 15px;
+  }
+
+  .final-cta__button {
+    width: 100%;
+  }
+}

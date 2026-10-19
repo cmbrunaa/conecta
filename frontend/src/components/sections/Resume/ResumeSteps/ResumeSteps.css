@@ -1,0 +1,177 @@
+.resume-steps {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 56px;
+
+  overflow-x: auto;
+
+  scrollbar-width: none;
+}
+
+.resume-steps::-webkit-scrollbar {
+  display: none;
+}
+
+/* ITEM */
+
+.resume-steps__item {
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+/* BOTÃO */
+
+.resume-steps__button {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: inherit;
+
+  cursor: default;
+}
+
+/* NÚMERO */
+
+.resume-steps__number {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+
+  background-color: var(--color-surface);
+
+  color: var(--color-text-secondary);
+
+  font-size: 11px;
+  font-weight: 800;
+
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+/* TEXTO */
+
+.resume-steps__label {
+  color: var(--color-text-secondary);
+
+  font-size: 12px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition: color var(--transition-fast);
+}
+
+/* ETAPA ATUAL */
+
+.resume-steps__item--active
+  .resume-steps__number {
+  border-color: var(--color-primary);
+
+  background-color: var(--color-primary);
+
+  color: var(--color-white);
+}
+
+.resume-steps__item--active
+  .resume-steps__label {
+  color: var(--color-text);
+}
+
+/* ETAPAS CONCLUÍDAS */
+
+.resume-steps__item--completed
+  .resume-steps__number {
+  border-color: var(--color-primary);
+
+  background-color: rgba(162, 2, 2, 0.08);
+
+  color: var(--color-primary);
+}
+
+.resume-steps__item--completed
+  .resume-steps__label {
+  color: var(--color-text);
+}
+
+/* ETAPAS CLICÁVEIS */
+
+.resume-steps__item--completed
+  .resume-steps__button {
+  cursor: pointer;
+}
+
+.resume-steps__item--completed
+  .resume-steps__button:hover
+  .resume-steps__number {
+  background-color: var(--color-primary);
+
+  color: var(--color-white);
+
+  transform: translateY(-2px);
+}
+
+.resume-steps__item--completed
+  .resume-steps__button:hover
+  .resume-steps__label {
+  color: var(--color-primary);
+}
+
+/* LINHA */
+
+.resume-steps__line {
+  width: 48px;
+  height: 1px;
+
+  margin: 0 14px;
+
+  background-color: var(--color-border);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 600px) {
+  .resume-steps {
+    margin-top: 40px;
+  }
+
+  .resume-steps__number {
+    width: 34px;
+    height: 34px;
+
+    font-size: 10px;
+  }
+
+  .resume-steps__label {
+    font-size: 11px;
+  }
+
+  .resume-steps__line {
+    width: 28px;
+
+    margin: 0 10px;
+  }
+}

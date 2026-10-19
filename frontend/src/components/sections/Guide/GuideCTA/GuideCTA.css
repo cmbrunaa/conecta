@@ -1,0 +1,173 @@
+.guide-cta {
+  padding: 120px 24px;
+
+  background: #181818;
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+.guide-cta__container {
+  width: min(100%, var(--container-width));
+
+  margin: 0 auto;
+}
+
+.guide-cta__content {
+  max-width: 820px;
+}
+
+/* =========================
+   EYEBROW
+========================= */
+
+.guide-cta__eyebrow {
+  display: block;
+
+  margin-bottom: 22px;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+
+  color: #a20202;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.guide-cta h2 {
+  max-width: 760px;
+
+  margin-bottom: 26px;
+
+  font-size: clamp(44px, 6vw, 72px);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.guide-cta p {
+  max-width: 620px;
+
+  margin-bottom: 36px;
+
+  font-size: 16px;
+  line-height: 1.75;
+
+  color: #b8b8b8;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.guide-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.guide-cta__primary,
+.guide-cta__secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 52px;
+
+  padding: 0 22px;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  transition:
+    transform 200ms ease,
+    background-color 200ms ease,
+    border-color 200ms ease,
+    color 200ms ease;
+}
+
+/* =========================
+   PRIMARY BUTTON
+========================= */
+
+.guide-cta__primary {
+  gap: 14px;
+
+  background: #ffffff;
+
+  color: #181818;
+}
+
+.guide-cta__primary span {
+  font-size: 18px;
+  line-height: 1;
+
+  transition: transform 200ms ease;
+}
+
+.guide-cta__primary:hover {
+  transform: translateY(-2px);
+
+  background: #a20202;
+
+  color: #ffffff;
+}
+
+.guide-cta__primary:hover span {
+  transform: translateX(4px);
+}
+
+/* =========================
+   SECONDARY BUTTON
+========================= */
+
+.guide-cta__secondary {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  color: #ffffff;
+}
+
+.guide-cta__secondary:hover {
+  transform: translateY(-2px);
+
+  border-color: #a20202;
+
+  color: #a20202;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 550px) {
+  .guide-cta {
+    padding: 80px 20px;
+  }
+
+  .guide-cta h2 {
+    font-size: 42px;
+  }
+
+  .guide-cta p {
+    font-size: 14px;
+  }
+
+  .guide-cta__actions {
+    flex-direction: column;
+  }
+
+  .guide-cta__primary,
+  .guide-cta__secondary {
+    width: 100%;
+  }
+}

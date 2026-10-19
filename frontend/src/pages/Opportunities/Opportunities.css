@@ -1,0 +1,9 @@
+.opportunities-page {
+  min-height: 100vh;
+
+  background: var(--color-background);
+}
+
+.opportunities-page main {
+  overflow: hidden;
+}
