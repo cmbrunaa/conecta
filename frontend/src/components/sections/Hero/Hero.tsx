@@ -1,5 +1,7 @@
+
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
+import conectaHero from "../../../assets/images/conecta-hero.png";
 
 import "./Hero.css";
 
@@ -104,9 +106,18 @@ export function Hero() {
             ease: "easeOut",
           }}
         >
-          <div className="hero__visual-placeholder">
-            <span>ILUSTRAÇÃO</span>
-          </div>
+          <motion.img
+            className="hero__image"
+            src={conectaHero}
+            alt="Jovem utilizando um notebook enquanto prepara seu currículo"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.3,
+              ease: "easeOut",
+            }}
+          />
         </motion.div>
       </div>
     </section>
